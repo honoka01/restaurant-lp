@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trattoria Bella — カジュアルイタリアン</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo">Trattoria Bella</a>
+            <button class="nav__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#concept">コンセプト</a></li>
+                <li><a href="#menu">メニュー</a></li>
+                <li><a href="#info">店舗情報</a></li>
+                <li><a href="#reservation" class="nav__cta">予約する</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Casual Italian Restaurant — Tokyo</p>
+            <h1 class="hero__title">Trattoria Bella</h1>
+            <p class="hero__tagline">日常に、イタリアの食卓を。</p>
+            <a href="#reservation" class="btn btn--outline">席を予約する</a>
+        </div>
+        <div class="hero__scroll-hint">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+        <div class="hero__bottom-bar">
+            <div class="hero__bottom-item">
+                <span class="hero__bottom-label">営業時間</span>
+                <span class="hero__bottom-value">Tue – Sun &nbsp;11:00 – 22:00</span>
+            </div>
+            <div class="hero__bottom-divider"></div>
+            <div class="hero__bottom-item">
+                <span class="hero__bottom-label">場所</span>
+                <span class="hero__bottom-value">東京都渋谷区神宮前</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="concept" id="concept">
+        <div class="concept__inner">
+            <div class="concept__image-wrap reveal">
+                <div class="concept__image-placeholder">
+                    <span class="concept__image-label">Trattoria Bella's Kitchen</span>
+                </div>
+                <div class="concept__badge">Est.<br>2018</div>
+            </div>
+            <div class="concept__text reveal reveal--delay">
+                <span class="section-label">Our Concept</span>
+                <h2 class="section-title">素材と対話し、<br>シンプルを極める。</h2>
+                <blockquote class="concept__quote">
+                    「本当においしいものは、<br>素材の声に従うだけでいい。」
+                </blockquote>
+                <p class="concept__body">
+                    Trattoria Bella は、イタリア各地から厳選した食材と、日本の生産者が丹精込めて育てた旬の野菜・ハーブを組み合わせ、余計なものをそぎ落とした料理を提供します。
+                </p>
+                <p class="concept__body">
+                    気負わずに、でも本物を。毎日訪れたくなる、そんなひとりひとりのための食卓を目指しています。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="menu__header reveal">
+            <span class="section-label section-label--accent">Menu</span>
+            <h2 class="section-title section-title--light">本日のラインナップ</h2>
+        </div>
+
+        <div class="menu__categories">
+            <!-- Antipasto -->
+            <div class="menu__category reveal">
+                <h3 class="menu__category-title">
+                    <span class="menu__category-it">Antipasto</span>
+                    <span class="menu__category-jp">前菜</span>
+                </h3>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">バーニャカウダ</span>
+                            <span class="menu__item-desc">季節野菜・アンチョビ風味ソース</span>
+                        </div>
+                        <span class="menu__item-price">¥1,200</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">ブルスケッタ 3種</span>
+                            <span class="menu__item-desc">トマト・モッツァレラ・キャラメリゼオニオン</span>
+                        </div>
+                        <span class="menu__item-price">¥980</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">生ハムとルッコラのサラダ</span>
+                            <span class="menu__item-desc">パルミジャーノ・レッジャーノがけ</span>
+                        </div>
+                        <span class="menu__item-price">¥1,350</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">マリナーラのムール貝</span>
+                            <span class="menu__item-desc">白ワイン・にんにく・パセリ</span>
+                        </div>
+                        <span class="menu__item-price">¥1,480</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pasta -->
+            <div class="menu__category reveal reveal--delay">
+                <h3 class="menu__category-title">
+                    <span class="menu__category-it">Pasta</span>
+                    <span class="menu__category-jp">パスタ</span>
+                </h3>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">カルボナーラ</span>
+                            <span class="menu__item-desc">グアンチャーレ・卵黄・ペコリーノ</span>
+                        </div>
+                        <span class="menu__item-price">¥1,680</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">ボロネーゼ</span>
+                            <span class="menu__item-desc">国産牛・豚合挽き・8時間煮込み</span>
+                        </div>
+                        <span class="menu__item-price">¥1,780</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">ヴォンゴレビアンコ</span>
+                            <span class="menu__item-desc">蛤・白ワイン・有機オリーブオイル</span>
+                        </div>
+                        <span class="menu__item-price">¥1,850</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">トルテリーニ in ブロード</span>
+                            <span class="menu__item-desc">リコッタ＆ほうれん草詰め・チキンブロス</span>
+                        </div>
+                        <span class="menu__item-price">¥1,950</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pizza -->
+            <div class="menu__category reveal">
+                <h3 class="menu__category-title">
+                    <span class="menu__category-it">Pizza</span>
+                    <span class="menu__category-jp">ピザ</span>
+                </h3>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">マルゲリータ</span>
+                            <span class="menu__item-desc">サンマルツァーノトマト・水牛モッツァレラ</span>
+                        </div>
+                        <span class="menu__item-price">¥1,580</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">クワトロフォルマッジ</span>
+                            <span class="menu__item-desc">4種のチーズ・はちみつがけ</span>
+                        </div>
+                        <span class="menu__item-price">¥1,780</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">ビスマルク</span>
+                            <span class="menu__item-desc">半熟卵・生ハム・ルッコラ</span>
+                        </div>
+                        <span class="menu__item-price">¥1,880</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">ロマーナ</span>
+                            <span class="menu__item-desc">アンチョビ・ケイパー・オレガノ</span>
+                        </div>
+                        <span class="menu__item-price">¥1,680</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu__category reveal reveal--delay">
+                <h3 class="menu__category-title">
+                    <span class="menu__category-it">Bevande</span>
+                    <span class="menu__category-jp">ドリンク</span>
+                </h3>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">スプリッツ</span>
+                            <span class="menu__item-desc">アペロール・プロセッコ・ソーダ</span>
+                        </div>
+                        <span class="menu__item-price">¥980</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">ハウスワイン</span>
+                            <span class="menu__item-desc">赤・白・ロゼ グラス</span>
+                        </div>
+                        <span class="menu__item-price">¥780〜</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">ノンアルコールサングリア</span>
+                            <span class="menu__item-desc">旬のフルーツ・スパイス</span>
+                        </div>
+                        <span class="menu__item-price">¥750</span>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item-info">
+                            <span class="menu__item-name">イタリアンコーヒー</span>
+                            <span class="menu__item-desc">エスプレッソ・カプチーノ・マキアート</span>
+                        </div>
+                        <span class="menu__item-price">¥480〜</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="menu__note">※ 価格はすべて税込表示です。メニューは仕入れにより変更になる場合があります。</p>
+    </section>
+
+    <!-- Store Info Section -->
+    <section class="info" id="info">
+        <div class="info__inner">
+            <div class="info__header reveal">
+                <span class="section-label">Access &amp; Hours</span>
+                <h2 class="section-title">店舗情報</h2>
+            </div>
+
+            <div class="info__grid">
+                <div class="info__block reveal">
+                    <div class="info__icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                            <circle cx="12" cy="9" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="info__block-title">住所</h3>
+                    <p class="info__block-text">
+                        〒150-0001<br>
+                        東京都渋谷区神宮前 3-12-8<br>
+                        グリージオビル 1F
+                    </p>
+                    <p class="info__block-sub">
+                        渋谷駅より徒歩10分<br>
+                        表参道駅より徒歩7分
+                    </p>
+                </div>
+
+                <div class="info__block reveal reveal--delay">
+                    <div class="info__icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="info__block-title">営業時間</h3>
+                    <div class="info__hours">
+                        <div class="info__hours-row">
+                            <span class="info__hours-day">ランチ</span>
+                            <span class="info__hours-time">11:00 – 14:30</span>
+                        </div>
+                        <div class="info__hours-row">
+                            <span class="info__hours-day">ディナー</span>
+                            <span class="info__hours-time">17:30 – 22:00</span>
+                        </div>
+                        <div class="info__hours-row info__hours-row--closed">
+                            <span class="info__hours-day">定休日</span>
+                            <span class="info__hours-time">毎週月曜日</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__block reveal">
+                    <div class="info__icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3 class="info__block-title">お問い合わせ</h3>
+                    <p class="info__block-text">
+                        Tel: <a href="tel:0312345678">03-1234-5678</a>
+                    </p>
+                    <p class="info__block-text">
+                        <a href="mailto:grigio@example.com">grigio@example.com</a>
+                    </p>
+                    <p class="info__block-sub">
+                        ランチ・ディナーともに<br>
+                        ご予約承っております
+                    </p>
+                </div>
+            </div>
+
+            <div class="info__map reveal">
+                <div class="info__map-placeholder">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                        <circle cx="12" cy="9" r="2.5"/>
+                    </svg>
+                    <span>Map Placeholder — 東京都渋谷区神宮前 3-12-8</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation CTA Section -->
+    <section class="reservation" id="reservation">
+        <div class="reservation__inner">
+            <div class="reservation__content reveal">
+                <span class="section-label section-label--accent">Reservation</span>
+                <h2 class="reservation__title">今夜、Trattoria Bella で。</h2>
+                <p class="reservation__text">
+                    特別な夜も、何気ない日常も。<br>
+                    あなたのための席をご用意してお待ちしています。
+                </p>
+                <div class="reservation__actions">
+                    <button class="btn btn--primary" id="reserveBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        電話で予約する
+                    </button>
+                    <button class="btn btn--outline-light" id="bookingBtn">オンライン予約</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phone Modal -->
+    <div class="modal-overlay" id="phoneModal" role="dialog" aria-modal="true">
+        <div class="modal">
+            <button class="modal__x" id="phoneModalX" aria-label="閉じる">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="modal__icon modal__icon--phone">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <p class="modal__label">電話予約</p>
+            <h2 class="modal__title">お電話でご予約</h2>
+            <p class="modal__text">下記番号にお電話ください。<br>スタッフが丁寧にご対応いたします。</p>
+            <a href="tel:0312345678" class="modal__phone-number">03-1234-5678</a>
+            <p class="modal__phone-hours">受付時間：火〜日 &nbsp;11:00 – 21:30（ラスト）</p>
+            <button class="btn btn--primary modal__close-btn" id="phoneModalClose">閉じる</button>
+        </div>
+    </div>
+
+    <!-- Booking Modal (3 steps) -->
+    <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true">
+        <div class="modal modal--wide">
+
+            <!-- Step 1: Calendar -->
+            <div class="booking-step" id="stepCalendar">
+                <button class="modal__x" id="bookingClose" aria-label="閉じる">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+                <p class="modal__label">Online Reservation — Step 1 / 3</p>
+                <h2 class="modal__title">日付を選択</h2>
+
+                <div class="calendar">
+                    <div class="calendar__nav">
+                        <button class="calendar__nav-btn" id="calPrev" aria-label="前の月">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+                        </button>
+                        <span class="calendar__month" id="calMonthLabel"></span>
+                        <button class="calendar__nav-btn" id="calNext" aria-label="次の月">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                    </div>
+                    <div class="calendar__week-header">
+                        <span class="cal-sun">日</span><span class="cal-closed">月</span><span>火</span><span>水</span><span>木</span><span>金</span><span class="cal-sat">土</span>
+                    </div>
+                    <div class="calendar__grid" id="calGrid"></div>
+                    <p class="calendar__note">※ 月曜日は定休日です</p>
+                </div>
+            </div>
+
+            <!-- Step 2: Time Slots -->
+            <div class="booking-step" id="stepTime" hidden>
+                <button class="modal__back" id="timeBack" aria-label="日付選択に戻る">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    戻る
+                </button>
+                <button class="modal__x" id="timeClose" aria-label="閉じる">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+                <p class="modal__label">Online Reservation — Step 2 / 3</p>
+                <h2 class="modal__title">時間を選択</h2>
+                <p class="booking__date-display" id="selectedDateLabel"></p>
+
+                <div class="time-slots">
+                    <div class="time-slots__group">
+                        <h3 class="time-slots__heading">
+                            <span>ランチ</span>
+                            <span class="time-slots__sub">11:00 – 14:30</span>
+                        </h3>
+                        <div class="time-slots__grid" id="lunchSlots"></div>
+                    </div>
+                    <div class="time-slots__group">
+                        <h3 class="time-slots__heading">
+                            <span>ディナー</span>
+                            <span class="time-slots__sub">17:30 – 22:00</span>
+                        </h3>
+                        <div class="time-slots__grid" id="dinnerSlots"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Done -->
+            <div class="booking-step" id="stepDone" hidden>
+                <div class="modal__icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                <p class="modal__label">Reservation Complete</p>
+                <h2 class="modal__title">予約が完了しました</h2>
+                <p class="modal__text booking__summary" id="bookingSummary"></p>
+                <p class="modal__text">ご予約ありがとうございます。<br>確認のご連絡をお待ちください。</p>
+                <button class="btn btn--primary modal__close-btn" id="bookingDoneClose">閉じる</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__logo">Trattoria Bella</p>
+            <p class="footer__copy">© 2024 Trattoria Bella Italian Restaurant. All Rights Reserved.</p>
+            <nav class="footer__nav">
+                <a href="#concept">コンセプト</a>
+                <a href="#menu">メニュー</a>
+                <a href="#info">アクセス</a>
+                <a href="#reservation">予約</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
