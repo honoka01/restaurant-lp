@@ -744,7 +744,7 @@ img { max-width: 100%; display: block; }
 .reservation__title {
     font-family: var(--font-display);
     font-weight: 300;
-    font-size: clamp(3.5rem, 9vw, 7rem);
+    font-size: clamp(1.8rem, 3.8vw, 3rem);
     line-height: 0.95;
     color: var(--white);
     letter-spacing: -0.02em;
